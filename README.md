@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# React.js State Management Assessment - Coding Tasks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This repository contains the completed coding tasks for the React.js State Management Assessment. Below are the tasks that were implemented, demonstrating the key concepts of React and state management.
 
-## Available Scripts
+## Task 1: **State vs. Props** - User Profile Card
+- **Objective**: Create a comparison between state and props.
+- **Implementation**:
+  - **Props** are used to pass user data (e.g., name, email).
+  - **State** is used to toggle a "Show Details" button to expand/collapse the card.
+- **File**: `UserProfileCard.js`
 
-In the project directory, you can run:
+## Task 2: **Using useState for Local State Management** - Counter App
+- **Objective**: Build a counter app with increment, decrement, and reset buttons.
+- **Implementation**: 
+  - Used the `useState` hook to manage and update the count.
+- **File**: `CounterApp.js`
 
-### `npm start`
+## Task 3: **Controlled Components with Forms** - Controlled Form
+- **Objective**: Build a controlled form that includes input fields for Name and Email, with a Submit button.
+- **Implementation**: 
+  - Managed input values with state and logged the entered data on form submission.
+- **File**: `ControlledForm.js`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Task 4: **Lifting State Up** - Parent and Child Components
+- **Objective**: Lift state from two child components to a parent component.
+- **Implementation**:
+  - Child A: Input field to enter a message.
+  - Child B: Displays the message entered in Child A.
+- **File**: `ParentComponent.js`, `ChildA.js`, `ChildB.js`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Task 5: **Introduction to useReducer Hook** - Refactor Counter App
+- **Objective**: Refactor the counter app to use the `useReducer` hook instead of `useState`.
+- **Implementation**: 
+  - Used `useReducer` to handle state changes for increment, decrement, and reset actions.
+- **File**: `CounterAppWithReducer.js`
 
-### `npm test`
+## Task 6: **Global State Management with Context API** - Theme Toggle App
+- **Objective**: Build a Theme Toggle App using the Context API to switch between Light Mode and Dark Mode.
+- **Implementation**: 
+  - Used the Context API to manage the theme state globally.
+- **File**: `ThemeContext.js`, `ThemeToggleApp.js`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Task 7: **Real-World Application** - Todo List App
+- **Objective**: Build a Todo List Application with the ability to add, mark as completed, and delete tasks.
+- **Implementation**: 
+  - Used `useState` to manage the tasks array and render the list dynamically.
+  - **Bonus**: Implemented a filter to show All, Completed, or Pending tasks.
+- **File**: `TodoListApp.js`
 
-### `npm run build`
+## Task 8: **State Persistence with localStorage** - Todo List App Persistence
+- **Objective**: Enhance the Todo List App to save tasks in `localStorage` so the list persists after page reload.
+- **Implementation**:
+  - Used `localStorage` to persist the task list and synchronize it with React state.
+- **File**: `TodoListAppWithPersistence.js`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Files Overview
+- All the task files are located in the `/src` directory.
+- Each file contains the required implementation of state management using React concepts like `useState`, `useReducer`, `Context API`, and `localStorage`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this project locally, follow these steps:
 
-### `npm run eject`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Boy2700/react-test.git
+Navigate into the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy code
+cd react-test
+Install the required dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+npm install
+Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+bash
+Copy code
+npm start
+This will start the app and open it in your browser at http://localhost:3000.
+   
