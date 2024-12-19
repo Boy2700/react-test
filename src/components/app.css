@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    display: flex;
+  }
+  
+  nav a:hover {
+    background: #61dafb;
+    color: #20232a;
+  }
+  
